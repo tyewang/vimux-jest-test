@@ -20,3 +20,7 @@ git clone git@github.com:tyewang/vimux-jest-test.git
 - RunJest - runs all the tests
 - RunJestOnBuffer - runs all the tests in the current file
 - RunJestFocused - runs the current test under the cursor
+
+## Notes
+- This plugin does not work with `test.only` or `test.skip` because that would be weird.
+- Because of limitations with jest, running focused tests may run multiple tests if they have the same name
