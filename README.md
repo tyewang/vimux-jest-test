@@ -22,5 +22,5 @@ git clone git@github.com:tyewang/vimux-jest-test.git
 - RunJestFocused - runs the current test under the cursor
 
 ## Notes
-- This plugin does not work with `test.only` or `test.skip` because that would be weird.
+- This plugin does not run any tests that would not be normally run by jest, e.g. `test.skip`, etc
 - Because of limitations with jest, running focused tests may run multiple tests if they have the same name

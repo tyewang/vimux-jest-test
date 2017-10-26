@@ -7,7 +7,7 @@ function! RunJestOnBuffer()
 endfunction
 
 function! RunJestFocused()
-  let test_name = _jest_test_search('\<test(\|\<it(') "note the single quotes
+  let test_name = _jest_test_search('\<test(\|\<it(\|\<test.only(') "note the single quotes
 
   if test_name == ""
     echoerr "Couldn't find test name to run focused test."
